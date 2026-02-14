@@ -33,6 +33,22 @@ html, body {
     background-color: var(--dsc-color-bg-primary);
 }
 
+/*--------------------------------------*/
+/* generics styles */
+
+.dsc-container {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+
+.dsc-mb20 {
+    margin-bottom: 20px;
+}
+
+/*--------------------------------------*/
+/* header styles */
+
 header {
     background-color: var(--dsc-color-bg-secundary);
     height: 70px;
@@ -48,30 +64,39 @@ nav {
     justify-content: space-between;
 }
 
-.container {
+nav a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+nav h1 {
+    font-size: 24px;
+}
+
+.dsc-container {
     width: 100%;
     max-width: 960px;
     margin: auto;
 }
 
-.card {
+/*--------------------------------------*/
+/* card styles */
+
+.dsc-card {
     margin-bottom: 20px;
     border: 1px solid var(--dsc-color-card-border);
     border-radius: 4px;
     background-color: var(--dsc-color-card-bg);
 }
 
-.line-bottom {
+.dsc-line-bottom {
     border-bottom: 1px solid var(--dsc-color-card-border);
 }
 
+/*--------------------------------------*/
+/* button styles */
 
-
-.mb20 {
-    margin-bottom: 20px;
-}
-
-.btn {
+.dsc-btn {
     border-radius: 4px;
     height: 42px;
     font-size: 16px;
@@ -80,18 +105,19 @@ nav {
     justify-content: center;
     align-items: center;
 }
-.btn-page-container {
+
+.dsc-btn-page-container {
     width: 220px;
     display: grid;
     gap: 20px;
 }
 
-.btn-blue {
+.dsc-btn-blue {
     background-color: var(--dsc-color-btn-primary);
     color: var(--dsc-color-btn-inverse);
 }
 
-.btn-white {
+.dsc-btn-white {
     background-color: var(--dsc-color-btn-inverse);
     color: var(--dsc-color-btn-primary);
     border: 1px solid var(--dsc-color-btn-primary);
