@@ -90,6 +90,15 @@ nav h1 {
     margin: auto;
 }
 
+.dsc-logged-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.dsc-logged-user p{
+    font-size: 12px;
+}
+
 /*--------------------------------------*/
 /* card styles */
 
