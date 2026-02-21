@@ -98,7 +98,28 @@ nav a {
 }
 
 nav h1 {
-    font-size: 24px;
+    font-size: 16px;
+}
+
+.dsc-navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dsc-menu-items-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dsc-menu-items-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.dsc-menu-item {
+   
 }
 
 .dsc-container {
@@ -114,6 +135,12 @@ nav h1 {
 
 .dsc-logged-user p{
     font-size: 12px;
+}
+
+@media(min-width: 576px) {
+    nav h1 {
+        font-size: 24px;
+    }
 }
 
 /*--------------------------------------*/
