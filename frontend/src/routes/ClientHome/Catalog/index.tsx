@@ -1,14 +1,12 @@
-import HeaderClient from "../../components/HeaderClient"
 import './styles.css'
-import SearchBar from "../../components/SearchBar";
-import CatalogCard from "../../components/CatalogCard";
-import ButtonNextPage from "../../components/ButtonNextPage";
-import * as productService from "../../services/product-services";
+import SearchBar from "../../../components/SearchBar";
+import CatalogCard from "../../../components/CatalogCard";
+import ButtonNextPage from "../../../components/ButtonNextPage";
+import * as productService from "../../../services/product-services";
 
 export default function Catalog() {
     return (
         <>
-            <HeaderClient />
             <main>
                 <section id="catalog-section" className="dsc-container">
                     <SearchBar />
