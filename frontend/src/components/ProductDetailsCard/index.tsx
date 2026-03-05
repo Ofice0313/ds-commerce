@@ -1,21 +1,21 @@
 import './styles.css'
-import computerImg from '../../assets/images/computer.svg'
 import ProductCategory from '../ProductCategory'
+import type { ProductDTO } from '../../models/products';
 
-export default function ProductDetailsCard () {
+type Props = {
+  product: ProductDTO;
+}
+export default function ProductDetailsCard ({ product }: Props) {
     return (
         <div className="dsc-card dsc-mb20">
             <div className="dsc-product-details-top dsc-line-bottom">
-              <img src={computerImg} alt="Computer" />
+              <img src={product.imgUrl} alt={product.name} />
             </div>
             <div className="dsc-product-details-bottom">
-              <h3>R$ 5000,00</h3>
-              <h4>Computer Gamer XT</h4>
+              <h3>R$ {product.price.toFixed(2)}</h3>
+              <h4>{product.name}</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Tenetur explicabo perferendis autem nam culpa harum iusto obcaecati eveniet
-                voluptas fugit aspernatur corporis dicta delectus voluptatum
-                soluta, dolores eaque neque? Qui!
+                {product.description}
               </p>
               <div className="dsc-category-container">
                 <ProductCategory name="Electrónicos" />
